@@ -1,0 +1,27 @@
+.title_image{
+    margin-top: 20px;
+    margin-left:20px;
+    height: 300px;
+    width: 100%;
+    display: inline;
+    white-space: nowrap;
+    display: inline-block;
+}
+.title_right{
+    width: 50%;
+    display: inline-block;
+}
+.title_left{
+    width: 20%;
+    display: inline-block;
+}
+.title_head{
+    font-size: 70px;
+}
+.detail_text{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.label_class{
+    font-size: 20px;
+}
