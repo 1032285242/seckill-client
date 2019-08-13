@@ -136,7 +136,7 @@ $(function(){
 // };
 
 function initDayReport() {
-    var httpurl = "http://localhost:8080/commodity/queryCommoditiesList"
+    var httpurl = SECKILLCOMMODITIES
     var obj = {} ;
     $.ajax({
         url: httpurl,//要连接的接口
