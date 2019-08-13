@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a:focus{
+	outline:none !important;
+    outline-offset: 0 !important;
+}
+button:focus{
+	outline: none !important;
+}
+select:focus{
+	outline: none !important;
+}
+body{
+	margin: 0;
+	padding: 0;
+	min-width: 1366px;
+	background: url(../images/bg.png) fixed no-repeat;
+	background-size: cover;
+	user-select:none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	position: relative;
+	color: #FFFFFF
+}
+ul{
+	list-style: none;
+}
+.Divid_line{
+	width: 100%;
+	background-color: rgba(34,216,255,0.28);
+	height:8px;
+}
+.main{
+	border-width: 0 0 1px;
+	width: 100%;
+	height: 55px;
+}
+.normal:hover {
+    text-decoration: none;
+}
+.s_nav{
+	display: flex;
+}
+.s_nav ul{
+	display: flex;
+	line-height: 55px;
+	margin: 0;
+}
+#navbar li a{
+    display: block;
+    font-size:1.06rem;
+    color: #22d8ff;
+    padding:0 10px;
+    float: left;
+    background: url(../images/head_bold.png) center right no-repeat;
+    outline: none;
+    height: 54px;
+}
+#navbar ul li a.active{
+	color: #fff;
+	text-shadow: 0 0 8px #0967ed;
+}
+#navbar li:last-child a{
+	background-image: none;
+}
+.head_title,.nav_user{
+	display: flex;
+	height: 54px;
+	margin-right: 20px;
+}
+.head_title{
+	justify-content: center;
+	align-items: center;
+}
+.nav_user{
+	justify-content: flex-end;
+	align-items: center;
+}
+.head_title{
+    font-size: 1.88rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #0967ed;
+}
+.nav_user ul{
+	margin-bottom: 1px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row;
+}
+.nav_user ul li{
+	height: 36px;
+	line-height: 64px;
+}
+.nav_user ul li:last-child span{
+	font-size: 0.16rem;
+	color: #FFFFFF;
+}
+.s_func,.head_title,.nav_user{
+	flex: 1;
+}
+
+.user_photo{
+	width: 36px;
+	height: 36px;
+}
+.user_photo{
+	background: url(../images/head_user.png) center no-repeat;
+	background-size: contain;
+}
+.Separate{
+	height: 15px;
+	background: url(../images/head_bottom.png) left;
+	margin-top: -5px;
+}

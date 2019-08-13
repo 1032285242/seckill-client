@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>秒杀系统登录</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="./models/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/login.css"/>
+	</head>
+	<body>
+		<!--登录框-->
+		<div class="login">
+			<div class="welcome_login">欢迎登录</div>
+			<div class="login_form">
+				<form class="form-horizontal" id="login" >
+					<div class="form-group">
+						<span class="col-sm-1 col-sm-offset-2"><img src="./images/login/login_user.png"/></span>
+						<div class="col-sm-9">
+							<input type="text"  name="name" id="username" placeholder="请输入用户名">
+						</div>
+					</div>
+					<div class="form-group">
+						<span class="col-sm-1 col-sm-offset-2"><img src="./images/login/login_psd.png"/></span>
+						<div class="col-sm-9">
+							<input type="password" autocomplete="off" name="password" id="psw" placeholder="请输入密码">
+						</div>
+                    </div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit">登&nbsp;&nbsp;录</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="copyright">
+			<span><img src="./images/login/copyright.png" style="margin-right: 10px;"/>版权：广联达科技股份有限公司TOT2019 JAVA 五组</span>
+		</div>
+		<script type="text/javascript" src="./models/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="./models/jquery.validation/1.14.0/jquery.validate.js"></script>
+		<script type="text/javascript" src="./models/jquery.validation/1.14.0/validate-methods.js"></script>
+		<script type="text/javascript" src="./models/jquery.validation/1.14.0/messages_zh.js"></script>
+		<script type="text/javascript" src="./js/constants.js"></script>
+		<script type="text/javascript" src="./js/md5.js"></script>
+		<script type="text/javascript" src="./js/login.js"></script>
+	</body>
+</html>

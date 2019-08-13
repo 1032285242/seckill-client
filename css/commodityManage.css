@@ -1,0 +1,33 @@
+.commodity_detail_form{
+    text-align: center
+}
+/* .col-sm-5{
+    display: flex;
+    float: right;
+    color: white
+}
+
+.dataTables_paginate{
+    display: flex;
+    float: right;
+    color: white
+} */
+
+.pagination{
+    display: flex;
+    color: white
+}
+
+.pagination a{
+    color: white
+}
+
+#commodity_table_wrapper:nth-child(2){
+    display: inline-flex;
+    float: right;
+    margin-right: 10px;
+}
+
+.table{
+    text-align: center
+}
