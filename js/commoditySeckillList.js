@@ -20,18 +20,16 @@ function initDayReport() {
         type: 'GET',
         dataType: 'json',
         success: function (result) {
-            console.log(result)
+
             if (result.code == "200") {
                 pageInfo = result.data;
-                console.log(pageInfo);
+
                 setPageInfo(pageInfo);
             } else {
                 alert("错误码；" + result.code + "   错误信息：" + result.message);
             }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log('XMLHttpRequest:');
-            console.log(XMLHttpRequest);
             alert('网络异常！尝试刷新网页解决问题')
         }
     });
@@ -45,11 +43,10 @@ function initDayReport() {
         var text_tr=''
         for (i; i<result.length;i++) {
             var property = result[i].commodityCode;
-            console.log(property);
-            console.log(result[i].url);
+
             text_tr += '<td>'
-            text_tr += '<a href="http://www.baidu.com"><img style="width: 50% "src="'
-            text_tr += result[i].url+'"alt=""></a><div class="caption">'
+            text_tr += '<a href="./seckillNormalPage.html?id='+result[i].commodityCode+'"><img class="image_commodity" style="width: 50% "src="'
+            text_tr += 'http://10.1.84.27:8080/images/'+result[i].url+'"alt=""><div class="caption">'
             text_tr +='<h4>'+result[i].commodityName+'</h4>'
             text_tr +='<h4><p>价格：'+result[i].seckillPrice+'</p></h4>'
             if(result[i].nowStock==0){
@@ -66,8 +63,5 @@ function initDayReport() {
         }
         text +='<tr>'+text_tr+'</tr>'
         
-       
-        console.log(text)
-        console.log( $('#All'))
         $('#All').append(text);
     }
