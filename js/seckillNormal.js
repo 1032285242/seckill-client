@@ -3,6 +3,8 @@ var username = localStorage.getItem("username");
 var commodity;
 $(function(){
 
+   
+    
     //判断用户是否登录
 	if(username == '' || username == 'undefined' || username == null) {
 		window.location.href = '../login.html';
@@ -13,11 +15,15 @@ $(function(){
 
     $(document).ready(function(){
         console.log("123");
+        var url = document.location.toString();//获取url地址
+        var urlParmStr = url.slice(url.indexOf('?')+1);//获取问号后所有的字符串
+        var arr = urlParmStr.split('&');//通过&符号将字符串分割转成数组
+        var commodityCode = arr[0].split("=")[1];//获取数组中第一个参数
         $.ajax({
             type: "GET",//方法类型
             dataType: "json",//预期服务器返回的数据类型
             url: COMMODITIEDETAIL,
-            data:{'commodityCode':'20190001'},
+            data:{'commodityCode':commodityCode},
             success: function (result) {
                 console.log(result);
                 // result = eval('(' + result + ')');

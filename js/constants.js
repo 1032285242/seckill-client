@@ -5,10 +5,11 @@
  * @Description: 系统公共常量
  */
 
-var HOST_URL = 'http://localhost:8080';
+var HOST_URL = 'http://10.1.84.27:8080';
 //--------------登录-----------
 var LOGIN = HOST_URL+'/admin/login';
 var COMMODITIES= HOST_URL+'/commodity/commodities';
+var COMMODITIEDETAIL = HOST_URL+'/commodity/queryCommodityById';
 var SECKILLCOMMODITIES= HOST_URL+'/commodity/queryCommoditiesList';
 
 
