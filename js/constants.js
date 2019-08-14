@@ -13,3 +13,5 @@ var SECKILLCOMMODITIES= HOST_URL+'/commodity/queryCommoditiesList';
 var SECKILLRECORD= HOST_URL+'/commodity/querySecondKillRecord';
 
 
+var  COMMODITIEDETAIL= HOST_URL+ '/commodity/queryCommodityById';
+
