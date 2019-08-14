@@ -64,8 +64,8 @@ function initDayReport() {
         "bLengthChange": false, //是否允许用户，在下拉列表自定义选择分页大小(10, 25, 50 and 100),需要分页支持
         "bInfo": true, //是否显示表格相关信息：例如翻页信息等。
         "ajax":{
-            // "url": SECKILLRECORD+"?phone="+phone,
-            "url": SECKILLRECORD+"?phone=18817252008",
+            "url": SECKILLRECORD+"?phone="+phone,
+            // "url": SECKILLRECORD+"?phone=18817252008",
             "type":"GET",
         },
         "columns": [//返回列表名称
@@ -76,4 +76,9 @@ function initDayReport() {
         ]
     });
     return table;
+}
+
+function addphone(){
+    var bt=$("edit-phone").val();
+    phone = bt 
 }
