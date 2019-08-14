@@ -25,9 +25,18 @@
 #commodity_table_wrapper:nth-child(2){
     display: inline-flex;
     float: right;
-    margin-right: 10px;
+    width: 100%;
 }
 
-.table{
-    text-align: center
-}
+.box{
+    background-color: aliceblue;
+    width:20%; margin-top:50%; margin:auto;
+    height:250px; border:1px #111 solid;
+    display:none; /* 默认对话框隐藏 */
+    }
+    
+    
+    
+    .box.show{display:block;} 
+    .box .x{ font-size:18px; text-align:right; display:block;height:20%;}
+    .box input{width:80%; font-size:18px; margin-top:18px;}
