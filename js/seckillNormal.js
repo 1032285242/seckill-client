@@ -1,6 +1,7 @@
 // 获取本地存储的用户名
 var username = localStorage.getItem("username");
 var commodity;
+var imgurl;
 $(function(){
 
    
@@ -9,7 +10,8 @@ $(function(){
 	if(username == '' || username == 'undefined' || username == null) {
 		window.location.href = '../login.html';
 	} else {
-		$('#username').text(username);
+        $('#username').text(username);
+        
     }
     
 
@@ -29,6 +31,8 @@ $(function(){
                 // result = eval('(' + result + ')');
                 commodity = result.data.commodityDetail;
                 //document.getElementById("url").innerHTML = commodity.url;
+                //HOST_URL+'/images/'+url
+                
                 document.getElementById("commodityName").innerHTML = commodity.commodityName;
                 document.getElementById("describe").innerHTML = commodity.describe;
                 document.getElementById("endTime").innerHTML = getMyDate(commodity.endTime);
@@ -36,6 +40,7 @@ $(function(){
                 document.getElementById("nowStock").innerHTML = commodity.nowStock;
                 document.getElementById("seckillPrice").innerHTML = commodity.seckillPrice;
                 document.getElementById("startTime").innerHTML = getMyDate(commodity.startTime);
+                setImg(commodity);
             },  
             error : function() {
                 alert("异常！");
@@ -59,3 +64,13 @@ function getZF(num){
     }
     return num;
 }
+
+function setImg(result) {
+    console.log("setImg");
+    var text_tr=''
+    text_tr += '<img class="image_commodity" style="width: 50% "src="'
+    text_tr += HOST_URL+'/images/'+result.url+'"alt="">'
+    console.log(text_tr);
+    $('#imgdiv').append(text_tr);
+}
+
