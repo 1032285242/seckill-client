@@ -11,5 +11,8 @@ var LOGIN = HOST_URL+'/admin/login';
 var COMMODITIES= HOST_URL+'/commodity/commodities';
 var COMMODITIEDETAIL = HOST_URL+'/commodity/queryCommodityById';
 var SECKILLCOMMODITIES= HOST_URL+'/commodity/queryCommoditiesList';
+var SECKILLRECORD= HOST_URL+'/commodity/querySecondKillRecord';
 
+
+var  COMMODITIEDETAIL= HOST_URL+ '/commodity/queryCommodityById';
 
